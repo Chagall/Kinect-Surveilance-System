@@ -1,7 +1,56 @@
 List of things to do (Not ordered by priority).
 
-- For each one of them a new issue will be opened.
+- For each one of them a new issue will 'hopefully' be opened.
 
-- Research more about OpenKinect.
-- Draw the holding cases for Kinect, Notebook and Cellphone.
-- Build or pay to build the cases.
+1 - Research more about OpenKinect (Biggest issue)
+    1.1 - Learn how the 'libfreenect' deals with each of the kinect cameras. 
+          That is, to which of the cameras the library actually has support.
+    1.2 - Learn how to develop a simple program to move the kinect motors up and down.
+          - Issues related to this: 
+            - Apparently if the kinect is not on the vertical position the motors won't respond
+              accordingly. (Need to see if this is really the case).
+    1.3 - Learn how to develop a simple program that takes a screenshoot of all possible
+          usable kinect cameras.
+    1.4 - Learn how to develop a simple program that records the video stream from all possible
+          usable kinect cameras.
+          - Issues related to this: 
+            - What are the possible video formats avaiable for recording? The choosen format must
+              have a good quality/size ratio (possible mkv, mp4 or something related).
+    1.5 - Learn if it is possible, and if so, how to watch the kinect video streaming from another device.
+          In this case, the device I was planning to watch from was and Moto G 1st generation smartphone.
+    1.6 - Learn if it is possible, and if so, how to calculate the distance between the kinect 
+          sensor and someone inside the room.
+      
+2 - Drawings
+    2.0 - Draw the case prototype which will hold the Moto G in my arm.
+    2.1 - Draw the case prototype which will hold the Kinect on the wall.
+          - Issues related to this:
+            - Where in the room the Kinect would be placed.
+    2.2 - Draw the case prototype which will hold the notebook on the wall.
+          - Issues related to this:
+            - Is it really necessary to hold the notebook on the wall?
+              It can be placed on my desk.
+
+3 - Building the cases
+    3.0 - I still need to decide wheter or not I'm going to build them or pay/ask
+          someone to do it for me.
+
+3 - Sensors:
+    - Sensors to keep in mind: Luminosity, Temperature, Humidity. (Add more if I remmember/discover another)
+    - I think I could easily buy them here in my city.
+    - Ok, the whole idea of adding sensors to the play is nice, but how will they communicate with my notebook?
+      That is indeed a big issue. I think I would need to use a protoboard or an arduino, raspbery pi, beaglebone black.
+    - The luminosity sensor would be used to determine wheter the room's lights are turned on or off.
+        In case the lights are on: The app would receive the video stream from the normal camera.
+        In case the lights are off: The app would receive the video stream from the 'proximity' camera.
+          Because: We can't see any shit in the dark!
+      
+4 - Android application:
+    - Ok, this is a big issue too, since I don't know yet how to develop an android app.
+    - The app idea is: 
+        The kinect sensor is connected to the notebook
+        The notebook is connected to the internet
+        The notebook streams the video captured by the kinect to the app in real time
+        as well as the information provided by the sensors, displaying all of them in the phone screen.
+        The stream would be avaiable to anyone who had the access right to watch it.
+      
